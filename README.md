@@ -1,1 +1,1 @@
-info about this project
+Initial commit of basic build for fishery-independent survey tool using shiny.
