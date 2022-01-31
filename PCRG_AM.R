@@ -6,7 +6,7 @@ library(leaflet)
 library(shinyTree)
 
 # Read shapefile and filter out overlaps in catch areas
-ps_crab_sg <- st_read( "/Users/andrewmicks/Downloads/Puget Sound_Hexagonal Survey Grid_2000ft/Puget Sound_Hexagonal Survey Grid_2000ft.shp") %>%
+ps_crab_sg <- st_read( "./Input/Puget Sound_Hexagonal Survey Grid_2000ft.shp") %>%
   st_make_valid() %>%
   filter(Region == "1" & CatchArea == "20A" |
            Region == "1" & CatchArea == "20B" |
